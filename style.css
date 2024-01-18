@@ -1,0 +1,44 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  height: 100%;
+}
+
+#titlebar {
+  background: linear-gradient(to top, #8f8f8f, #ffffff);
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  vertical-align:middle;
+}
+
+#relbtn, #download, #view {
+  float: right;
+  margin-left: 10px;
+}
+
+#html {
+  flex: 1;
+  resize: none;
+  flex-grow: 1;
+}
+
+#webview {
+  flex: 1;
+}
+
+#editor {
+  display: flex;
+  height: calc(100% - 24px);
+}

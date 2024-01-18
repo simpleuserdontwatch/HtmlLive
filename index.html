@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="titlebar">
+    <img src="images/icon.png" alt="icon" id="icon" height="24" width="24" name="ico">
+    <label for="ico">HtmlLive Editor</label>
+    <input type="checkbox" id="reload" name="chb" checked="true" />
+    <label for="chb">Enable auto reload</label>
+    <button id="relbtn" onclick="writehtm()">Reload</button>
+    <button id="download" onclick="download()">Download</button>
+    <button id="view" onclick="view()">View in new tab</button>
+  </div>
+  <div id="editor">
+    <textarea id="html" name="html" placeholder="Your HTML code here"><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    Hello, World!
+  </body>
+</html></textarea>
+    <iframe id="webview"></iframe>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
