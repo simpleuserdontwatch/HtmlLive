@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>HtmlLive</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -19,7 +19,14 @@
     <button id="view" onclick="view()">View in new tab</button>
   </div>
   <div id="editor">
-    <textarea id="html" name="html" placeholder="Your HTML code here"><!DOCTYPE html>
+    <div id="tabbed">
+      <div id="tabs">
+        <button id="tab" onclick="opentab(0)">HTML</button>
+        <button id="tab" onclick="opentab(2)">JavaScript</button>
+        <button id="tab" onclick="opentab(1)">CSS</button>
+      </div>
+    <div id="tab1">
+      <textarea id="html" name="html" placeholder="Your HTML code here" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"><!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -28,9 +35,37 @@
     <title>Document</title>
   </head>
   <body>
-    Hello, World!
+    <div>
+      <span>Hello, World!</span>
+    </div>
   </body>
 </html></textarea>
+    </div>
+    <div id="tab2">
+      <textarea id="css" name="css" placeholder="Your CSS code here" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  font-family: sans-serif;
+  color: black;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+div {
+  height: 100%;
+  line-height: 100vh;
+  text-align: center;
+  background-color: #e398ff;
+}</textarea>
+      </div>
+      <div id="tab3">
+        <textarea id="js" name="js" placeholder="Your JavaScript code here" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+      </div>
+    </div>
     <iframe id="webview"></iframe>
   </div>
   <script src="script.js"></script>

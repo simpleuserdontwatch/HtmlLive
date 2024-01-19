@@ -28,14 +28,39 @@ img {
   margin-left: 10px;
 }
 
-#html {
+#html, #css, #js {
   flex: 1;
   resize: none;
   flex-grow: 1;
 }
 
+#tab1, #tab2, #tab3 {
+  flex: 1;
+  flex-grow: 1;
+  display: flex;
+}
+
+#tab2, #tab3 {
+  display: none;
+}
+
 #webview {
   flex: 1;
+}
+
+#tabbed {
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+#tab {
+  margin-right: 10px;
+  border: 1px outset black;
+  border-bottom: none;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
 }
 
 #editor {
